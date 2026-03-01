@@ -8,6 +8,7 @@ A simple proof-of-concept command-line operating system simulator written in Pyt
 - Create, read, and edit files
 - Navigate between directories
 - Clear screen functionality
+- Uses real files
 
 ## Available Commands
 
@@ -16,10 +17,12 @@ A simple proof-of-concept command-line operating system simulator written in Pyt
 | `ls` | List files in current directory |
 | `cd <dir>` | Change directory |
 | `cd --root` | Return to root directory |
+| `cd --host-os` | Go to host OS root (e.g., `C:\` on Windows) |
 | `cd ..` | Go to parent directory |
 | `cat <file>` | View file contents |
 | `edit <file>` | Edit or create a file |
 | `mkdir <dir>` | Create new directory |
+| `rm <file/dir>` | Remove file or directory |
 | `clear` | Clear the screen |
 | `help` | Show available commands |
 | `exit` | Exit SimpleOS |
@@ -60,8 +63,7 @@ Directory 'newfolder/' created
 /documents/> cd --root
 />
 ```
-## Important note:
-Everything is stored in variables and changes will be erased when exiting.
+
 ## Requirements
 
 - Python 3.x
