@@ -25,7 +25,7 @@ A simple proof-of-concept command-line operating system simulator written in Pyt
 | `rm <file/dir>` | Remove file or directory |
 | `clear` | Clear the screen |
 | `help` | Show available commands |
-| `exit` | Exit SimpleOS |
+| `exit` | Exit PyOS |
 
 ## Usage
 
